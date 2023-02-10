@@ -19,13 +19,13 @@ options.forEach(option => {
         
         // Determinar el resultado final
         let message;
-        if (this.classList[1] === "fa-hand-rock" && computerOption.classList[1] === "fa-hand-scissors") {
+        if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-peace") {
         message = "Ganaste";
         playerScore++;
-        } else if (this.classList[1] === "fa-hand-paper" && computerOption.classList[1] === "fa-hand-rock") {
+        } else if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-rock") {
         message = "Ganaste";
         playerScore++;
-        } else if (this.classList[1] === "fa-hand-scissors" && computerOption.classList[1] === "fa-hand-paper") {
+        } else if (this.classList[1] === "fa-hand-peace" && computerOption.classList[1] === "fa-hand") {
         message = "Ganaste";
         playerScore++;
         } else if (this.classList[1] === computerOption.classList[1]) {
@@ -39,18 +39,18 @@ options.forEach(option => {
         let userSelection;
         if (this.classList[1] === "fa-hand-rock") {
             userSelection = "rock";
-        } else if (this.classList[1] === "fa-hand-paper") {
+        } else if (this.classList[1] === "fa-hand") {
             userSelection = "paper";
-        } else if (this.classList[1] === "fa-hand-scissors") {
+        } else if (this.classList[1] === "fa-hand-peace") {
             userSelection = "scissors";
         }
          // Determinar el texto de la opción elegida por la computadora
         let computerSelection;
         if (computerOption.classList[1] === "fa-hand-rock") {
             computerSelection = "rock";
-        } else if (computerOption.classList[1] === "fa-hand-paper") {
+        } else if (computerOption.classList[1] === "fa-hand") {
             computerSelection = "paper";
-        } else if (computerOption.classList[1] === "fa-hand-scissors") {
+        } else if (computerOption.classList[1] === "fa-hand-peace") {
             computerSelection = "scissors";
         }
 
