@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Juego de Piedra, Papel y Tijera</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--TEXTO PRINCIPAL-->
+  <h1 class="title">Piedra, Papel o Tijera</h1>
+  <div class="center-score">
+    <p id="score">0 - 0</p>
+    <p id="marcador">marcador</p>
+  </div>
+  <!--CONTENIDO-->
+  <div class="container">
+    <div class="content">
+      <!--USUARIO-->
+      <div class="left">
+        <h2 class="subtitle">Tu</h2>
+        <h5>Selecciona una opción</h5>
+        <div class="options">
+          <i class="fas fa-hand-paper hand-paper"></i>
+          <i class="fas fa-hand-rock hand-rock"></i>
+          <i class="fas fa-hand-scissors hand-scissors"></i>
+        </div>
+      </div>
+      <!--RESULTADO-->
+      <div class="center">
+        <div class="line-vertical"></div>
+        <h2 id="game-result">
+          <p id="result"></p>
+          <div class="result-total">
+            <div class="user">
+              <i id="user-choice" class="fas results-game-user"></i>
+              <p id="user-choice-text"></p>
+            </div>
+            <div class="computer">
+              <i id="computer-choice" class="fas results-game-computer"></i>
+              <p id="computer-choice-text"></p>
+            </div>
+          </div>
+        </h2>
+      </div>
+      <!--COMPUTADORA-->
+      <div class="right">
+        <h2 class="subtitle">Computadora</h2>
+        <div class="options-computer">
+          <i class="fas fa-hand-paper"></i>
+          <i class="fas fa-hand-rock"></i>
+          <i class="fas fa-hand-scissors"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

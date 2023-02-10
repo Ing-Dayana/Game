@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    height: 60px;
+}
+
+.center-score{
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    width: 100%;
+}
+
+.center{
+    align-items: center;
+    margin: 50px;
+    width: 40%;
+    position: relative;
+}
+
+.line-vertical {
+    border-right: 1px solid black;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    width: 2px;
+    height: 630px;
+}
+
+.show-line-vertical {
+    display: block;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+}
+.subtitle{
+    margin-top: 50px;
+}
+
+.left h5{
+    margin-top: 20px;
+    font-size: medium;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.options-computer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.options-computer i{
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.options i {
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+
+.results-game{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.result-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.result-total i{
+    font-size: 80px;
+}
+.results-game-user,
+.results-game-computer {
+    width: 48%;
+}
+#user-choice-text {
+    text-align: center;
+    margin-top: 100px;
+    padding-right: 200px;
+}
+
+#computer-choice-text {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#score {
+    font-size: 40px;
+}
+
+#marcador{
+    font-size: 20px !important;
+    font-weight: lighter;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
