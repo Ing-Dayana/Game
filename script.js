@@ -75,10 +75,16 @@ options.forEach(option => {
         score.textContent = `${playerScore} - ${computerScore}`;
         result.textContent = "";
         document.querySelector("#user-choice").classList = "";
+        document.querySelector("#user-choice-text").textContent = "";
         document.querySelector("#computer-choice").classList = "";
-        result.textContent = "";
+        document.querySelector("#computer-choice-text").textContent = "";
+        userChoiceText.textContent = "";
+        computerChoiceText.textContent = "";
+        resultTotal.style.display = "none";
         }
-
+        if (roundsPlayed === 4) {
+        return;
+        }
         // Ocultar Clases para mensaje ganador/perdedor
         if (message) {
         result.textContent = "";
@@ -98,6 +104,10 @@ options.forEach(option => {
         }, 2000);
     });
 });
+
+
+
+
 
 
 
