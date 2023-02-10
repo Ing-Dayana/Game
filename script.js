@@ -22,7 +22,7 @@ options.forEach(option => {
         if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-peace") {
         message = "Ganaste";
         playerScore++;
-        } else if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-rock") {
+        } else if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-back-fist") {
         message = "Ganaste";
         playerScore++;
         } else if (this.classList[1] === "fa-hand-peace" && computerOption.classList[1] === "fa-hand") {
@@ -37,7 +37,7 @@ options.forEach(option => {
         
         // Determinar el texto de la opción elegida por el usuario
         let userSelection;
-        if (this.classList[1] === "fa-hand-rock") {
+        if (this.classList[1] === "fa-hand-back-fist") {
             userSelection = "rock";
         } else if (this.classList[1] === "fa-hand") {
             userSelection = "paper";
@@ -46,7 +46,7 @@ options.forEach(option => {
         }
          // Determinar el texto de la opción elegida por la computadora
         let computerSelection;
-        if (computerOption.classList[1] === "fa-hand-rock") {
+        if (computerOption.classList[1] === "fa-hand-back-fist") {
             computerSelection = "rock";
         } else if (computerOption.classList[1] === "fa-hand") {
             computerSelection = "paper";
