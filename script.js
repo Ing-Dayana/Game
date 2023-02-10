@@ -45,18 +45,26 @@ options.forEach(option => {
             userSelection = "scissors";
         }
          // Determinar el texto de la opción elegida por la computadora
+       let userSelection;
+        if (this.classList[1] === "fa-hand-back-fist") {
+          userSelection = "rock";
+        } else if (this.classList[1] === "fa-hand") {
+          userSelection = "paper";
+        } else if (this.classList[1] === "fa-hand-peace") {
+          userSelection = "scissors";
+        }
+
         let computerSelection;
         if (computerOption.classList[1] === "fa-hand-back-fist") {
-            computerSelection = "rock";
+          computerSelection = "rock";
         } else if (computerOption.classList[1] === "fa-hand") {
-            computerSelection = "paper";
+          computerSelection = "paper";
         } else if (computerOption.classList[1] === "fa-hand-peace") {
-            computerSelection = "scissors";
+          computerSelection = "scissors";
         }
 
         userChoiceText.textContent = userSelection === "rock" ? "Roca" : userSelection === "paper" ? "Papel" : "Tijeras";
         computerChoiceText.textContent = computerSelection === "rock" ? "Roca" : computerSelection === "paper" ? "Papel" : "Tijeras";
-        
         // Mostrar el resultado
         result.textContent = message;
         score.textContent = `${playerScore} - ${computerScore}`;
