@@ -19,7 +19,7 @@ options.forEach(option => {
         
         // Determinar el resultado final
         let message;
-        if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-peace") {
+        if (this.classList[1] === "fa-hand-back-fist" && computerOption.classList[1] === "fa-hand-peace") {
         message = "Ganaste";
         playerScore++;
         } else if (this.classList[1] === "fa-hand" && computerOption.classList[1] === "fa-hand-back-fist") {
